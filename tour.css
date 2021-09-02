@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+header .carousel-inner .carousel-item{
+    height: 100vh;
+
+}
+
+.navbar-inverse{
+    height: 80px;
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-inverse .navbar-brand{
+    color: #fff;
+    font-size: 40px;
+    padding: 40px 15px;
+    font-weight: 900;
+}
+.nav .navbar-nav .navbar-right{
+    margin-left: 200px;   
+}
+.navbar-collapse .navbar-nav{
+    padding-left: 250px;
+}
+.navbar-nav .nav-item{
+    margin-left: 20px;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color: #fff;
+    text-transform: uppercase;
+}
+button{
+  color: beige;
+  padding: 9px 25px;
+  background-color: rgba(0,136,169,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-weight: 500;
+  font-size: 16px;
+}
+button:hover{
+  background-color: rgba(0,136,169,0.8);
+}
+.destination{
+    height: 100vh;
+    background: #f9f9f9;
+}
+.heading{
+    color: #333;
+    font-size: 3.5rem;
+    padding: 1rem;
+    padding-top: 6rem;
+    text-align: center;
+    letter-spacing: .2rem;
+    font-family: 'Lato', sans-serif;
+}
+.heading span{
+    color: #048b92;
+}
+.destination .card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.destination .card-container .card{
+    width: 22rem;
+    margin: 2rem;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+    overflow: hidden;
+    position: relative;
+}
+.destination .card-container .card img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+.destination .card-container .content{
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.destination .card-container .content .title{
+    color: #0098a1;
+    font-size: 2rem;
+}
+.destination .card-container .content p{
+    color: #333;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+.destination .card-container .content .stars i{
+    padding: 0 .2rem;
+    font-size: 1.5rem;
+    color: gold;
+    
+}
+.destination .card-container .content .btn{
+    font-size: 1.7rem;
+    margin-top: 1.2rem;
+    height: 3rem;
+    width: 9rem;
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    background-color: #0098a1;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s linear;
+}
+.destination .card-container .content .btn:hover{
+    background: none;
+    border: .2rem solid #0098a1;
+    color: #0098a1;
+}
+.destination .card-container .card .discount{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: block;
+    height: 2rem;
+    width: 4rem;
+    background: #ff3300;
+    color: #fff;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.footer{
+    position: relative;
+    top: 100px;
+    background-color: rgb(109, 187, 187);
+    padding: 70px 0;
+
+}
+.container1{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer-col{
+    width: 32%;
+    padding: 0 15px;
+
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #F08080;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 20px;
+    text-transform: capitalize;
+    color:#F08080;
+    font-weight: 400;
+    color: #fdecec;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color:rgb(240, 97, 97);
+    padding-left: 9px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin-right: 10px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    color:rgb(240, 97, 97);
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #242628;
+    background-color: #F08080;
+}

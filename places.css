@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+header .carousel-inner .carousel-item{
+    height: 100vh;
+
+}
+
+.navbar-inverse{
+    height: 80px;
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-inverse .navbar-brand{
+    color: #fff;
+    font-size: 40px;
+    padding: 40px 15px;
+    font-weight: 900;
+}
+.nav .navbar-nav .navbar-right{
+    margin-left: 200px;   
+}
+.navbar-collapse .navbar-nav{
+    padding-left: 250px;
+}
+.navbar-nav .nav-item{
+    margin-left: 20px;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color: #fff;
+    text-transform: uppercase;
+}
+button{
+  color: beige;
+  padding: 9px 25px;
+  background-color: rgba(0,136,169,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-weight: 500;
+  font-size: 16px;
+}
+button:hover{
+  background-color: rgba(0,136,169,0.8);
+}
+.btn{
+    height: 3.5rem;
+    width: 15rem;
+    background-color: rgba(221, 73, 73, 0.836);
+    color: #fff;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    opacity: .7;
+}
+.btn:hover{
+    opacity: 1;
+}
+.heading{
+    text-align: center;
+    padding: 1rem 1rem;
+    padding-top: 2rem;
+    font-size: 3.5rem;
+    color: rgb(7, 122, 69);
+    text-transform: uppercase;
+}
+.title{
+    text-align: center;
+    padding: 0rem 1rem;
+    padding-bottom: 20px;
+    font-size: 2.5rem;
+    color:#666;
+    font-weight: 300;
+}
+.feature{
+    background: rgb(192, 209, 224);
+
+}
+.feature .title{
+    color: #eee;
+}
+.feature .card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+.feature .card-container .card{
+    height: 30rem;
+    width: 30rem;
+    margin: 2rem 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.feature .card-container .card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.feature .card-container .card .info{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: -240px;
+    left: 0;
+    background: linear-gradient(transparent,#000);
+    padding: 0 2rem;
+    padding-top: 65%;
+}
+.feature .card-container .card:hover .info{
+    bottom: 0px;
+
+}
+
+
+/* .card{
+    cursor: pointer;
+    transition: .3s;
+}
+.card:hover{
+    transform: scale(1.1);
+} */
+
+/* .feature .card-container .card img{
+    transition: .3s;
+  }
+  .feature .card-container .card img:hover{
+    transform: scale(1.1);
+  } */
+.feature .card-container .card .info h3{
+    font-size: 3rem ;
+    color: #fff;
+}
+.feature .card-container .card .info .stars i{
+    font-size: 1.5rem ;
+    color: rgb(226, 223, 21);
+    padding: 1rem 0;
+}
+.feature .card-container .card .info p{
+    font-size: .75rem;
+    color: #eee;
+}
+.feature .card-container .card .info .btn{
+    box-shadow: none;
+}
+.footer{
+    position: relative;
+    bottom: 0px;
+    background-color: rgb(109, 187, 187);
+    padding: 70px 0;
+
+}
+.container1{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer-col{
+    width: 32%;
+    padding: 0 15px;
+
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #F08080;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 20px;
+    text-transform: capitalize;
+    color:#F08080;
+    font-weight: 400;
+    color: #fdecec;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color:rgb(240, 97, 97);
+    padding-left: 9px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin-right: 10px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    color:rgb(240, 97, 97);
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #242628;
+    background-color: #F08080;
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Book Now</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css" integrity="sha512-4wfcoXlib1Aq0mUtsLLM74SZtmB73VHTafZAvxIp/Wk9u1PpIsrfmTvK0+yKetghCL8SHlZbMyEcV8Z21v42UQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="booknow.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <a name="booknow"></a>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-inverse">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Adventure Goal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav navbar-right me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" data-scroll="Home" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-scroll="About" href="index.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-scroll="Places" href="places.html">Places</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-scroll="Gallery" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <button><a class="nav-link" data-scroll="BookNow" href="booknow.html" style="color: white;">BookNow</a></button>
+                </li>
+                <li class="nav-item">
+                  <button><a class="nav-link" data-scroll="Login" href="login.html" style="color: white;">Login</a></button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <section class="home">
+            <div class="video">
+                <video src="images/video.mp4" loop muted autoplay></video>
+            </div>
+            <div class="content">
+                <h1>Start new Journey <br>Explore great place</h1>
+                <p>Let travel cherish your mind!!</p>
+            </div>
+            <div class="form-container">
+                <form action="" method="POST" id="forms" onsubmit="displayBooking()">
+                    <h3>Book your Destination</h3>
+                    <span>Location</span>
+                    <input type="text" placeholder="Place you want to visit">
+                    <span>Members</span>
+                    <input type="number" placeholder="Number of guests">
+                    <span>Arrivals</span>
+                    <input type="date">
+                    <span>Leaving</span>
+                    <input type="date">
+                    <input type="submit" value="Book Now">
+                    <br>
+                    <div id="display" style="margin-top: 20px; color: red;font-size: 16px;"></div>
+                </form>
+            </div>
+        </section>
+        <script>
+          var forms=document.getElementById('forms')
+          forms.addEventListener('submit',function(e){
+            e.preventDefault()
+            document.getElementById('display').innerHTML='Booking Confirmed! We will contact you soon';
+          })
+        </script>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
